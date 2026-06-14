@@ -237,6 +237,8 @@
     background: linear-gradient(135deg, var(--neon), var(--pink));
     box-shadow: 0 0 26px rgba(155, 92, 255, 0.4);
   }
+  .avatar { overflow: hidden; }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
   .person .role {
     display: inline-block; margin-top: 6px; font-size: 0.78rem; color: var(--neon-soft);
     background: rgba(155, 92, 255, 0.12); padding: 3px 12px; border-radius: 999px;
@@ -375,7 +377,7 @@
         <p>Shoutout to the members keeping the vibe alive</p>
       </div>
       <div class="staff-grid staff-grid--single">
-        <div class="person reveal"><span class="badge-week">★ Staff of the Week</span><div class="avatar">S</div><h3>Username</h3><div class="role">Staff</div></div>
+        <div class="person reveal"><span class="badge-week">★ Staff of the Week</span><div class="avatar"><img src="assets/abhis.png" alt="Abhis" /></div><h3>Abhis</h3><div class="role">Staff</div></div>
       </div>
       <p style="text-align:center;color:var(--muted);margin-top:22px;font-size:0.9rem;">Edit names &amp; roles each week in <code>index.html</code> (Staff of the Week section).</p>
     </div>
