@@ -224,6 +224,7 @@
 
   /* Staff of week */
   .staff-grid { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .staff-grid--single { max-width: 320px; margin: 0 auto; }
   .person {
     text-align: center; background: var(--panel); border: 1px solid var(--panel-border);
     border-radius: var(--radius); padding: 28px 20px; backdrop-filter: blur(8px);
@@ -373,10 +374,8 @@
         <h2>Staff of the Week</h2>
         <p>Shoutout to the members keeping the vibe alive</p>
       </div>
-      <div class="staff-grid">
-        <div class="person reveal"><span class="badge-week">★ Staff of the Week</span><div class="avatar">A</div><h3>Username</h3><div class="role">Moderator</div></div>
-        <div class="person reveal"><span class="badge-week">★ Staff of the Week</span><div class="avatar">B</div><h3>Username</h3><div class="role">Helper</div></div>
-        <div class="person reveal"><span class="badge-week">★ Staff of the Week</span><div class="avatar">C</div><h3>Username</h3><div class="role">Event Host</div></div>
+      <div class="staff-grid staff-grid--single">
+        <div class="person reveal"><span class="badge-week">★ Staff of the Week</span><div class="avatar">S</div><h3>Username</h3><div class="role">Staff</div></div>
       </div>
       <p style="text-align:center;color:var(--muted);margin-top:22px;font-size:0.9rem;">Edit names &amp; roles each week in <code>index.html</code> (Staff of the Week section).</p>
     </div>
@@ -391,6 +390,8 @@
       <div class="staff-grid">
         <div class="person reveal"><div class="avatar">👑</div><h3>Owner</h3><div class="role">Founder</div></div>
         <div class="person reveal"><div class="avatar">👑</div><h3>Co-Owner</h3><div class="role">Co-Founder</div></div>
+        <div class="person reveal"><div class="avatar">👑</div><h3>Owner</h3><div class="role">Owner</div></div>
+        <div class="person reveal"><div class="avatar">👑</div><h3>Owner</h3><div class="role">Owner</div></div>
       </div>
     </div>
   </section>
